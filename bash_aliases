@@ -13,13 +13,17 @@ fi
 # some more ls aliases
 alias ll='ls -lh'
 alias la='ls -A'
+alias lla='ls -lah'
 
 # my aliases
 
 #  apt aliases
-alias apti='sudo apt install'
-alias aptd='sudo apt update'
-alias aptg='sudo apt upgrade'
+alias apti='sudo apt-get install'
+alias aptd='sudo apt-get update'
+alias aptg='sudo apt-get upgrade'
+alias aptdg='sudo apt-get dist-upgrade'
+alias aptar='sudo apt-get autoremove'
+alias aptac='sudo apt-get autoclean'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
@@ -32,15 +36,12 @@ alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
-alias gspush='git subtree push'
-alias gspull='git subtree pull'
 alias ggui='git gui&'
 alias gco='git checkout'
 alias gst='git status'
 alias gitka='gitk --all&'
 alias gdi='git diff --color'
-alias glo='git log --color --graph --decorate'
-alias gro='git reflog --date=local --color'
+alias glo='git log --color'
 alias gfe='git fetch'
 #  svn
 alias sup='svn update'
@@ -59,36 +60,6 @@ alias wget='wget --no-check-certificate' # workaround wget bug, see https://gith
 apts() {
   apt-cache search $* | ack "$(echo $*|sed 's/\s\+/|/g')"
 }
-
-# whichpkg: which package installed this command? (Detects builtins and follows symlinks)
-# Usage examples:
-#
-# nia$ whichpkg vim
-# vim-gtk: /usr/bin/vim.gtk
-#
-# nia$ whichpkg type
-# type встроена в оболочку
-#
-# nia$ whichpkg ll
-# ll является алиасом для `ls -lh'
-#
-# nia$ whichpkg foobarbaz
-# No such command: foobarbaz
-whichpkg() {
-  the_type=$(type -t $1)
-  if [[ -z $the_type ]]; then
-    echo No such command: $1
-  elif [[ "file" == $the_type ]]; then
-    # readlink -f: Follow all symlinks till the end
-    dpkg -S $(readlink -f $(type -p $1)) # NB: avoid `which` in favor of `type -p`! http://stackoverflow.com/a/677212/693538
-  else
-    # else (if it is not a file) just print the full `type` message, it is informative
-    type $1
-  fi
-}
-
-# man on bash builtin
-bashman () { man bash | less -p "^       $1 "; }
 
 # svn
 sdi() {
