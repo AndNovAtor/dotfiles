@@ -18,15 +18,15 @@ alias lla='ls -lah'
 # my aliases
 
 #  apt aliases
-alias apti='sudo apt-get install'
-alias aptd='sudo apt-get update'
-alias aptg='sudo apt-get upgrade'
-alias aptdg='sudo apt-get dist-upgrade'
-alias aptar='sudo apt-get autoremove'
-alias aptac='sudo apt-get autoclean'
+alias apti='apt-get install'
+alias aptd='apt-get update'
+alias aptg='apt-get upgrade'
+alias aptdg='apt-get dist-upgrade'
+alias aptar='apt-get autoremove'
+alias aptac='apt-get autoclean'
 #  gem
-alias gi="sudo gem install"
-alias gu="sudo gem update"
+alias gi="gem install"
+alias gu="gem update"
 #  ack-grep
 alias ack='ack-grep'
 alias ackrb='ack --type-add ruby=.erb,.haml'
