@@ -18,12 +18,19 @@ alias lla='ls -lah'
 # my aliases
 
 #  apt aliases
-alias apti='sudo apt-get install'
-alias aptd='sudo apt-get update'
-alias aptg='sudo apt-get upgrade'
+alias aptgi='sudo apt-get install'
+alias aptud='sudo apt-get update'
+alias aptug='sudo apt-get upgrade'
 alias aptdg='sudo apt-get dist-upgrade'
-alias aptar='sudo apt-get autoremove'
-alias aptac='sudo apt-get autoclean'
+alias aptr='sudo apt-get autoremove'
+alias aptc='sudo apt-get autoclean'
+
+alias apti='sudo apt install'
+alias aptd='sudo apt update'
+alias aptg='sudo apt upgrade'
+alias aptfu='sudo apt full-upgrade'
+alias aptar='sudo apt autoremove'
+alias aptac='sudo apt autoclean'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
