@@ -7,11 +7,16 @@ First, backup your old config files! To see which files to backup, look into
 copy_into_home/ folder of this project.
 
 Then clone this repo into your home dir:
-git clone git://github.com/NIA/dotfiles.git $HOME/dotfiles
+git clone https://github.com/AndNovAtor/dotfiles.git $HOME/dotfiles
+
+or if you is already in home dir - simple:
+git clone https://github.com/NIA/dotfiles.git
 
 Copy the files that link to those in dotfiles:
 (WARNING: This will OVERWRITE your old .bashrc, .bash_aliases etc!)
 cp $HOME/dotfiles/copy_into_home/.* $HOME/
+
+or copy the files one by one - if you don't want use, for example, .XCompose.
 
 Config global gitignore:
 git config --global core.excludesfile $HOME/dotfiles/gitignore_global
