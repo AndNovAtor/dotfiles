@@ -31,6 +31,14 @@ alias aptg='sudo apt upgrade'
 alias aptfu='sudo apt full-upgrade'
 alias aptar='sudo apt autoremove'
 alias aptac='sudo apt autoclean'
+
+# # yum aliases
+# alias yumi='sudo yum install'
+# alias yumu='sudo yum update'
+# alias yumug='sudo yum upgrade'
+# alias yumcu='sudo yum check-update'
+# alias yumca='sudo yum clean all'
+# alias yumcc='sudo yum clean cache'
 #  gem
 alias gi="sudo gem install"
 alias gu="sudo gem update"
