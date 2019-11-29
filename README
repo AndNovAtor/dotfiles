@@ -7,23 +7,29 @@ First, backup your old config files! To see which files to backup, look into
 copy_into_home/ folder of this project.
 
 Then clone this repo into your home dir:
-git clone https://github.com/AndNovAtor/dotfiles.git $HOME/dotfiles
+git clone https://github.com/AndNovAtor/dotfiles.git ~/dotfiles
 
 or if you is already in home dir - simple:
 git clone https://github.com/AndNovAtor/dotfiles.git
 
 Copy the files that link to those in dotfiles:
 (WARNING: This will OVERWRITE your old .bashrc, .bash_aliases etc!)
-cp $HOME/dotfiles/copy_into_home/.* $HOME/
+cp ~/dotfiles/copy_into_home/.* ~/
 
 or copy the files one by one - if you don't want use, for example, .XCompose.
 
+or copy all files without .XCompose and .irb:
+cp ~/dotfiles/copy_into_home/.bash* ~
+cp ~/dotfiles/copy_into_home/.inputrc ~
+
+
+Optional:
+
 Config global gitignore:
-git config --global core.excludesfile $HOME/dotfiles/gitignore_global
+git config --global core.excludesfile ~/dotfiles/gitignore_global
 
 If you want your .XCompose to work, check out these instructions on setting
 default system input mode to XIM: https://wiki.edubuntu.org/ComposeKey
 You may need to `apt-get install im-switch` if it is not installed by default.
 
 Add some custom config to new files in your home dir, and have fun!
-
