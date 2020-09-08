@@ -45,9 +45,6 @@ alias gu="sudo gem update"
 #  ack-grep
 alias ack='ack-grep'
 alias ackrb='ack --type-add ruby=.erb,.haml'
-#  rails
-alias ss='script/server'
-alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
