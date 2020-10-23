@@ -20,27 +20,13 @@ alias sudo='sudo '
 
 # my aliases
 
-#  apt aliases
-alias aptgi='sudo apt-get install'
-alias aptud='sudo apt-get update'
-alias aptg='sudo apt-get upgrade'
-alias aptdg='sudo apt-get dist-upgrade'
-alias aptr='sudo apt-get autoremove'
-alias aptc='sudo apt-get autoclean'
-
-alias apti='sudo apt install'
-alias aptd='sudo apt update'
-alias aptfu='sudo apt full-upgrade'
-alias aptar='sudo apt autoremove'
-alias aptac='sudo apt autoclean'
-
-# # yum aliases
-# alias yumi='sudo yum install'
-# alias yumu='sudo yum update'
-# alias yumug='sudo yum upgrade'
-# alias yumcu='sudo yum check-update'
-# alias yumca='sudo yum clean all'
-# alias yumcc='sudo yum clean cache'
+# yum aliases
+alias yumi='sudo yum install'
+alias yumu='sudo yum update'
+alias yumug='sudo yum upgrade'
+alias yumcu='sudo yum check-update'
+alias yumca='sudo yum clean all'
+alias yumcc='sudo yum clean cache'
 #  ack-grep
 alias ack='ack-grep'
 #  git
