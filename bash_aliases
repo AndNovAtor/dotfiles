@@ -18,21 +18,21 @@ alias lla='ls -lah'
 # my aliases
 
 #  apt aliases
-alias apti='apt-get install'
-alias aptd='apt-get update'
+alias aptgi='apt-get install'
+alias aptud='apt-get update'
 alias aptg='apt-get upgrade'
 alias aptdg='apt-get dist-upgrade'
-alias aptar='apt-get autoremove'
-alias aptac='apt-get autoclean'
-#  gem
-alias gi="gem install"
-alias gu="gem update"
+alias aptr='apt-get autoremove'
+alias aptc='apt-get autoclean'
+
+alias apti='apt install'
+alias aptd='apt update'
+alias aptfu='apt full-upgrade'
+alias aptar='apt autoremove'
+alias aptac='apt autoclean'
+
 #  ack-grep
 alias ack='ack-grep'
-alias ackrb='ack --type-add ruby=.erb,.haml'
-#  rails
-alias ss='script/server'
-alias sc='script/console'
 #  git
 alias gush='git push'
 alias gull='git pull'
@@ -43,29 +43,13 @@ alias gitka='gitk --all&'
 alias gdi='git diff --color'
 alias glo='git log --color'
 alias gfe='git fetch'
-#  svn
-alias sup='svn update'
-# TODO ignoring Makefile system-wide is a Bad Thing. This should be done only for Qt projects.
-alias sst='svn status | ack -v "Makefile|(_tmp|pro.user|/_?debug|/_?release)$"'
 #  ledger
 alias leed='gvim $LEDGER_FILE'
 #  other
 alias o='xdg-open'
 alias wget='wget --no-check-certificate' # workaround wget bug, see https://github.com/blog/738-sidejack-prevention-phase-2-ssl-everywhere#comment-9002
 
-# -- FUNCTIONS --
-# TODO: separate file
-
 # apts with filtering
 apts() {
   apt-cache search $* | ack "$(echo $*|sed 's/\s\+/|/g')"
 }
-
-# svn
-sdi() {
-  svn diff $* | colordiff | less -R
-}
-slo() {
-  svn log $* | colordiff | less -R
-}
-
