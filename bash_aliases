@@ -15,18 +15,15 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias lla='ls -lah'
 
-# for commands with sudo autocomplition
-alias sudo='sudo '
-
 # my aliases
 
 # yum aliases (call yum "alias" since CentOS 8)
-alias yumi='sudo yum install'
-alias yumu='sudo yum update'
-alias yumug='sudo yum upgrade'
-alias yumcu='sudo yum check-update'
-alias yumca='sudo yum clean all'
-alias yumcc='sudo yum clean cache'
+alias yumi='yum install'
+alias yumu='yum update'
+alias yumug='yum upgrade'
+alias yumcu='yum check-update'
+alias yumca='yum clean all'
+alias yumcc='yum clean cache'
 # dnf aliases (since CentOS 8)
 alias dnfi='dnf install'
 alias dnfu='dnf upgrade'
