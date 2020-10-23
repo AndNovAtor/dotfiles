@@ -20,13 +20,19 @@ alias sudo='sudo '
 
 # my aliases
 
-# yum aliases
+# yum aliases (call yum "alias" since CentOS 8)
 alias yumi='sudo yum install'
 alias yumu='sudo yum update'
 alias yumug='sudo yum upgrade'
 alias yumcu='sudo yum check-update'
 alias yumca='sudo yum clean all'
 alias yumcc='sudo yum clean cache'
+# dnf aliases (since CentOS 8)
+alias dnfi='dnf install'
+alias dnfu='dnf upgrade'
+alias dnfcu='dnf check-update'
+alias dnfca='dnf clean all'
+alias dnfcc='dnf clean cache'
 #  ack-grep
 alias ack='ack-grep'
 #  git
