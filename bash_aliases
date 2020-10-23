@@ -15,18 +15,15 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias lla='ls -lah'
 
-# for commands with sudo autocomplition
-alias sudo='sudo '
-
 # my aliases
 
 # yum aliases
-alias yumi='sudo yum install'
-alias yumu='sudo yum update'
-alias yumug='sudo yum upgrade'
-alias yumcu='sudo yum check-update'
-alias yumca='sudo yum clean all'
-alias yumcc='sudo yum clean cache'
+alias yumi='yum install'
+alias yumu='yum update'
+alias yumug='yum upgrade'
+alias yumcu='yum check-update'
+alias yumca='yum clean all'
+alias yumcc='yum clean cache'
 #  ack-grep
 alias ack='ack-grep'
 #  git
@@ -42,7 +39,6 @@ alias gfe='git fetch'
 #  ledger
 alias leed='gvim $LEDGER_FILE'
 #  other
-alias o='xdg-open'
 alias wget='wget --no-check-certificate' # workaround wget bug, see https://github.com/blog/738-sidejack-prevention-phase-2-ssl-everywhere#comment-9002
 
 # apts with filtering
